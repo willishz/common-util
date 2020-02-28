@@ -1,9 +1,6 @@
 package com.willishz.util;
 
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
@@ -34,8 +31,6 @@ import java.util.regex.Pattern;
  * 字符串操作工具类
  */
 public class StringUtil extends StringUtils {
-
-    private static Logger logger = LoggerFactory.getLogger("StringUtil");
 
     public static final String sdf_time_pattern = "yyyy-MM-dd HH:mm:ss";
     public static final ThreadLocal<SimpleDateFormat> sdf_time = new ThreadLocal<SimpleDateFormat>() {
@@ -87,7 +82,7 @@ public class StringUtil extends StringUtils {
      */
     public static final String CHARSET = "UTF-8";
 
-    public static void main(String[] args) throws UnsupportedEncodingException {
+    public static void main(String[] args) {
 //        System.out.println("result[" + StringUtil.trimToNull("\nd d\n") + "]");
 //        System.out.println("result[" + StringUtil.trimToNull("　\t\n d d \r  ") + "]");
 //        System.out.println(StringUtil.toString(new BigDecimal("-1.00")));
@@ -102,7 +97,6 @@ public class StringUtil extends StringUtils {
 //        System.out.println(StringUtil.isNegativeDecimal("1000"));
 //        System.out.println(StringUtil.isNegativeDecimal("0.001"));
 //        System.out.println(StringUtil.isNegativeDecimal("-1"));
-        System.out.println(new Date().getTime());
     }
 
     /**
