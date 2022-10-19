@@ -27,7 +27,7 @@
         <poi.version>3.6</poi.version>
         <flying-saucer.version>9.0.3</flying-saucer.version>
         <guava.version>15.0</guava.version>
-        <jackson.version>2.11.1</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
     </properties>
 
     <dependencies>
